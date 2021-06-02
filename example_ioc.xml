@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE engineconfig SYSTEM "./engineconfig.dtd">
+<engineconfig>
+<!--default values
+  <buffer_reserve>2</buffer_reserve>
+  <ignored_future>1</ignored_future>
+  <write_period>30</write_period>
+-->
+  <buffer_reserve>4</buffer_reserve>
+  <ignored_future>1</ignored_future>
+  <write_period>60</write_period>
+  <file_size>61</file_size>
+  <get_threshold>20</get_threshold>
+  <max_repeat_count>120</max_repeat_count>
+  <group>
+    <name>Example IOC</name>
+    <channel><name>scs:subExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:xxxExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:aSubExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:tick</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:step</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:period</name><period>1</period><monitor/></channel>
+    <channel><name>scs:line:b</name><period>1</period><monitor/></channel>
+    <channel><name>scs:aiExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:aiExample1</name><period>1</period><monitor/></channel>
+    <channel><name>scs:ai1</name><period>1</period><monitor/></channel>
+    <channel><name>scs:aiExample2</name><period>1</period><monitor/></channel>
+    <channel><name>scs:ai2</name><period>1</period><monitor/></channel>
+    <channel><name>scs:aiExample3</name><period>1</period><monitor/></channel>
+    <channel><name>scs:ai3</name><period>1</period><monitor/></channel>
+    <channel><name>scs:EXAMPLE:version</name><period>1</period><monitor/></channel>
+    <channel><name>scs:compressExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:angle</name><period>1</period><monitor/></channel>
+    <channel><name>scs:line:a</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:x</name><period>1</period><monitor/></channel>
+    <channel><name>scs:circle:y</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calcExample</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calcExample1</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calc1</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calcExample2</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calc2</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calcExample3</name><period>1</period><monitor/></channel>
+    <channel><name>scs:calc3</name><period>1</period><monitor/></channel>
+  </group>
+</engineconfig>

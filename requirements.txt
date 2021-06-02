@@ -1,5 +1,4 @@
-lxml
-caproto
-untangle
 attrs
-typing
+caproto
+lxml
+typing; python_version > "3.5"

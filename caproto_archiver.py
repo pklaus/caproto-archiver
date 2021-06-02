@@ -1,18 +1,9 @@
 #!/usr/bin/env python
 
+import enum, os, queue, time
 import caproto
 from caproto.threading.client import Context
-import lxml
-import lxml.etree
-import untangle
-import attr
-import typing
-
-import os
-import time
-import enum
-import queue
-
+import attr, lxml, lxml.etree, typing
 
 class CaprotoStore():
     def __init__(self, folder):
@@ -37,12 +28,6 @@ class ConfigChannel():
 @attr.s
 class Config():
     channels = attr.ib(type=typing.List[ConfigChannel], default=attr.Factory(list))
-
-def get_config_xml_untangle(xml_config_file):
-    obj = untangle.parse(xml_config_file)
-    for group in obj.engineconfig.group:
-        print(group.name['tag'])
-    return Config()
 
 def get_config_xml_lxml(xml_config_file):
     with open(xml_config_file, 'rb') as f:
@@ -88,7 +73,6 @@ def main():
     if not args.xml_config_file:
         parser.error('please provide one type of configuration file')
     if args.xml_config_file:
-        #config = get_config_xml_untangle(args.xml_config_file)
         config = get_config_xml_lxml(args.xml_config_file)
 
     ctx = Context(timeout=None)

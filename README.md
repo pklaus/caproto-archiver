@@ -21,6 +21,13 @@ able to fill the gap here? Remains to be determined.
 
 ## Running the caproto-archiver
 
+The application needs Python3 and several additional Python packages.
+They can be installed using:
+
+```sh
+pip install --upgrade -r requirements.txt
+```
+
 The archiver uses the same configuration format as the CSS/RDB Archiver (aka *BEAUTY*).
 An example configuration file is part of this repository.
 
